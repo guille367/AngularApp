@@ -1,0 +1,39 @@
+	<!DOTYPE html>
+<html ng-app="MiApplicacion">
+<head>
+	<title>pruebas angular</title>
+	
+	<script src="https://code.jquery.com/jquery-1.12.0.js"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.css">
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+	
+</head>
+	
+<body ng-controller="ControllerPersonasSV">
+	<table class="table">
+		<thead>
+			<tr>
+				<td>Nombre</td>
+				<td>ID</td>
+				<td>Titulo</td>
+				<td>Cuerpo</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="usuario in listaPersonas">
+				<td>{{usuario.userId}}</td>
+				<td>{{usuario.id}}</td>
+				<td>{{usuario.title}}</td>
+				<td>{{usuario.body}}</td>
+			</tr>
+		</tbody>
+	</table>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+<script src="scripts/controller.js"></script>
+</body>
+</html>
